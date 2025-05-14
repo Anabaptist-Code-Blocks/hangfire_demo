@@ -16,6 +16,8 @@ builder.Services.AddHangfire(config =>
 
 builder.Services.AddHangfireServer();
 
+builder.Services.AddScoped<VehicleService>();
+
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()

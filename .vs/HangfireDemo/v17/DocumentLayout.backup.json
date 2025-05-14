@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\ABCcode\\hangfire_demo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\hangfiredemo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:hangfiredemo.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\query.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,21 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1819,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 19,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Mutation.cs",
-              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Mutation.cs",
-              "RelativeDocumentMoniker": "Mutation.cs",
-              "ToolTip": "C:\\ABCcode\\hangfire_demo\\Mutation.cs",
-              "RelativeToolTip": "Mutation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:28:40.401Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -127,7 +122,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HangfireDemo",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\HangfireDemo.csproj",
+              "RelativeDocumentMoniker": "HangfireDemo.csproj",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\HangfireDemo.csproj",
+              "RelativeToolTip": "HangfireDemo.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-14T22:45:40.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VehicleService.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\VehicleService.cs",
+              "RelativeDocumentMoniker": "VehicleService.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\VehicleService.cs",
+              "RelativeToolTip": "VehicleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T22:34:17.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Mutation.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Mutation.cs",
+              "RelativeDocumentMoniker": "Mutation.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\Mutation.cs",
+              "RelativeToolTip": "Mutation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T22:28:40.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Query.cs",
               "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Query.cs",
               "RelativeDocumentMoniker": "Query.cs",
@@ -135,12 +168,11 @@
               "RelativeToolTip": "Query.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:21:37.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T22:21:37.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Driver.cs",
               "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Driver.cs",
               "RelativeDocumentMoniker": "Driver.cs",
@@ -148,12 +180,11 @@
               "RelativeToolTip": "Driver.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:17:58.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T22:17:58.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Vehicle.cs",
               "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Vehicle.cs",
               "RelativeDocumentMoniker": "Vehicle.cs",
@@ -161,12 +192,11 @@
               "RelativeToolTip": "Vehicle.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:17:32.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T22:17:32.229Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -174,18 +204,17 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-25T12:51:48.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T12:51:48.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\ABCcode\\hangfire_demo\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T12:07:56.628Z",
               "EditorCaption": ""
