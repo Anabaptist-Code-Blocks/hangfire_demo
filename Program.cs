@@ -5,9 +5,6 @@ using HangfireDemo;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-//builder.Services.AddRazorPages();
-
 var configuration = builder.Configuration;
 
 builder.Services.AddHangfire(config =>
@@ -17,6 +14,7 @@ builder.Services.AddHangfire(config =>
 builder.Services.AddHangfireServer();
 
 builder.Services.AddScoped<VehicleService>();
+builder.Services.AddScoped<SimulatedApisService>();
 
 builder.Services
     .AddGraphQLServer()
@@ -32,13 +30,6 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseRouting();
-
-//app.UseAuthorization();
-
-//app.MapStaticAssets();
-//app.MapRazorPages()
-//   .WithStaticAssets();
-
 
 app.UseHangfireDashboard();
 
