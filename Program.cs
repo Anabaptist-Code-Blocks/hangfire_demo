@@ -13,13 +13,25 @@ builder.Services.AddHangfire(config =>
 
 builder.Services.AddHangfireServer();
 
+
+//builder.Services.AddHangfireServer(options =>
+//{
+//    options.Queues = ["Vehicles", "TestQueue"];
+//    options.ServerName = "MySecondServer";
+//    options.WorkerCount = 5;
+//});
+
+
+
 builder.Services.AddScoped<VehicleService>();
 builder.Services.AddScoped<SimulatedApisService>();
 
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
-    .AddMutationType<Mutation>();
+    .AddMutationType<Mutation>()
+    .AddSubscriptionType<Subscription>()
+    .AddInMemorySubscriptions();
 
 var app = builder.Build();
 
@@ -33,6 +45,7 @@ app.UseRouting();
 
 app.UseHangfireDashboard();
 
+app.UseWebSockets();
 app.MapGraphQL();
 
 app.Run();

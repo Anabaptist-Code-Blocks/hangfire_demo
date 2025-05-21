@@ -1,3 +1,0 @@
-﻿Advantages of Hangfire
- * Persistent Storage
- * Offload the work from the main application thread so you don't tie it up

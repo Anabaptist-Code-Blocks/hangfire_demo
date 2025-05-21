@@ -9,8 +9,8 @@ public class SimulatedApisService
         return true;
     }
 
-    public async Task<bool> GetVehicles()
-    {
+    //public async Task<bool> GetVehicles()
+    //{
 
-    }
+    //}
 }

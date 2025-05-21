@@ -1,11 +1,13 @@
 ﻿using Hangfire;
+using Hangfire.Server;
+using HotChocolate.Subscriptions;
 using System.Threading.Tasks;
 
 namespace HangfireDemo;
-public class VehicleService
+public class VehicleService(ITopicEventSender eventSender)
 {
     /*
-     * ENQUEUED JOBS
+     * ENQUEUED JOBS - Fire and Forget
      * Will be executed almost immediately
      */
     public void Enqueue()
@@ -68,9 +70,13 @@ public class VehicleService
     //Methods must be public so Hangfire can "see" them
     public async Task TestJob(string text)
     {
+
         Console.WriteLine(text);
         await Task.Delay(5000);
+
+        await eventSender.SendAsync("driver", new Driver() { FirstName = "Leslie", LastName = "Martin" });
     }
+
 
 
     //Its best practice to pass ids in rather than objects, because of Hangfire's serialization
@@ -93,4 +99,3 @@ public class VehicleService
     //}
 
 }
-
