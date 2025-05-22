@@ -2,27 +2,46 @@
 
 public class Mutation
 {
-    public bool Enqueue([Service] VehicleService vehicleService)
+    public bool Enqueue([Service] BackgroundJobService vehicleService)
     {
         vehicleService.Enqueue();
         return true;
     }
 
-    public bool Schedule([Service] VehicleService vehicleService)
+    public bool Requeue([Service] BackgroundJobService vehicleService, string jobId)
     {
-        vehicleService.Schedule();
+        vehicleService.Requeue(jobId);
         return true;
     }
 
-    public bool AddRecurring([Service] VehicleService vehicleService)
+    public bool Schedule([Service] BackgroundJobService vehicleService, int seconds)
     {
-        vehicleService.AddRecurring();
+        vehicleService.Schedule(seconds);
         return true;
     }
 
-    public bool AddContinueWith([Service] VehicleService vehicleService)
+    public bool Reschedule([Service] BackgroundJobService vehicleService, string jobId, int seconds)
+    {
+        vehicleService.Reshedule(jobId, seconds);
+        return true;
+    }
+
+    public bool AddRecurring([Service] BackgroundJobService vehicleService, string cron)
+    {
+        vehicleService.AddRecurring(cron);
+        return true;
+    }
+
+    public bool TriggerRecurring([Service] BackgroundJobService vehicleService)
+    {
+        vehicleService.TriggerRecurring();
+        return true;
+    }
+
+    public bool AddContinueWith([Service] BackgroundJobService vehicleService)
     {
         vehicleService.AddContinueWith();
         return true;
     }
+      
 }
