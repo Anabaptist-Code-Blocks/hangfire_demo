@@ -49,5 +49,11 @@ public class Mutation
         bulkExampleService.UploadBulk(count);
         return true;
     }
-      
+
+    public bool TriggerUploadWithFilter([Service] BulkExampleService bulkExampleService, string text)
+    {
+        bulkExampleService.UploadWithFilterA(text);
+        return true;
+    }
+
 }

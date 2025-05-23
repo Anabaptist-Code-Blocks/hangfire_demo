@@ -22,6 +22,14 @@ public class BackgroundJobService(ITopicEventSender eventSender)
     //    BackgroundJob.Enqueue(Constants.SlowQueue, () => TestJob("Testing an enqueued job"));
     //}
 
+
+    //Can reference a service that is not constructor-injected
+    //public void Enqueue()
+    //{
+    //    BackgroundJob.Enqueue<MyOtherService>((service) => service.Test());
+    //}
+
+
     public void Requeue(string jobId)
     {
         BackgroundJob.Requeue(jobId);

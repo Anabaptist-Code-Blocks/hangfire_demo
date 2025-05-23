@@ -8,10 +8,13 @@ var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
 
-builder.Services.AddHangfire(config =>
+builder.Services.AddHangfire((serviceProvider, config) =>
+{
     config.UsePostgreSqlStorage(c =>
-        c.UseNpgsqlConnection(configuration.GetConnectionString("HangfireConnection"))));
+        c.UseNpgsqlConnection(configuration.GetConnectionString("HangfireConnection")));
 
+    config.UseActivator(new TestJobActivator(serviceProvider.GetRequiredService<IServiceScopeFactory>()));
+});
 
 //Server where you don't set any options will use a "default" queue and use 20 workers.
 builder.Services.AddHangfireServer();

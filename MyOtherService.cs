@@ -2,5 +2,9 @@
 {
     public class MyOtherService
     {
+        public void Test()
+        {
+
+        }
     }
 }

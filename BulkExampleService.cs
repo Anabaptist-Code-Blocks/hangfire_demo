@@ -42,7 +42,7 @@ public class BulkExampleService(ITopicEventSender eventSender)
 
 
     //[AutomaticRetry(Attempts = 3, DelaysInSeconds = [15], OnAttemptsExceeded = AttemptsExceededAction.Fail)]
-    
+    [DisableConcurrentExecution(30)]
     public async Task Upload(string text)
     {
         await Task.Delay(5000);
@@ -76,6 +76,25 @@ public class BulkExampleService(ITopicEventSender eventSender)
         //}
 
 
+    }
+
+
+
+
+
+    public void UploadWithFilterA(string text)
+    {
+        BackgroundJob.Enqueue(() => UploadWithFilterB(text));
+
+    }
+
+
+    [Test]
+    public async Task UploadWithFilterB(string text)
+    {
+        await Task.Delay(5000);
+
+        await eventSender.SendAsync("jobResult", new JobResult() { Text = text, Random = new Random() });
     }
 
 
