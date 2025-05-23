@@ -17,11 +17,17 @@ builder.Services.AddHangfire(config =>
 builder.Services.AddHangfireServer();
 
 
+//builder.Services.AddHangfireServer(options =>
+//{
+//    options.SchedulePollingInterval = TimeSpan.FromSeconds(2);
+//    options.Queues = [Constants.FastQueue];
+//});
+
 
 //builder.Services.AddHangfireServer(options =>
 //{
-//    options.Queues = ["Vehicles", "TestQueue"];
-//    options.ServerName = "MySecondServer";
+//    options.Queues = [Constants.SlowQueue, Constants.QueueNumberTwo];
+//    options.ServerName = "MyLimitedServer";
 //    options.WorkerCount = 5;
 //});
 
@@ -29,6 +35,7 @@ builder.Services.AddHangfireServer();
 
 
 builder.Services.AddScoped<BackgroundJobService>();
+builder.Services.AddScoped<BulkExampleService>();
 
 builder.Services
     .AddGraphQLServer()

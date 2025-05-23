@@ -1,7 +1,5 @@
 ﻿using Hangfire;
-using Hangfire.Server;
 using HotChocolate.Subscriptions;
-using System.Threading.Tasks;
 
 namespace HangfireDemo;
 public class BackgroundJobService(ITopicEventSender eventSender)
@@ -13,7 +11,7 @@ public class BackgroundJobService(ITopicEventSender eventSender)
 
     public void Enqueue()
     {
-        //While this looks like a method call, all its really doing is serializing the information
+        //While this looks like a method call, its actually an expression tree. All its really doing is serializing the information
         //namespace, method name, arguments and argument types, etc.
         BackgroundJob.Enqueue(() => TestJob("Testing an enqueued job"));
 
@@ -21,10 +19,7 @@ public class BackgroundJobService(ITopicEventSender eventSender)
 
     //public void Enqueue()
     //{
-    //    //While this looks like a method call, all its really doing is serializing the information
-    //    //namespace, method name, arguments and argument types, etc.
-    //    BackgroundJob.Enqueue(Constants.InvoicesQueue, () => TestJob("Testing an enqueued job"));
-
+    //    BackgroundJob.Enqueue(Constants.SlowQueue, () => TestJob("Testing an enqueued job"));
     //}
 
     public void Requeue(string jobId)
@@ -38,7 +33,7 @@ public class BackgroundJobService(ITopicEventSender eventSender)
      * Will enqueue after the given delay
      * Server's default pl
      */
-    public void Schedule(int seconds)
+    public void Schedule(int seconds)   
     {
         var when = TimeSpan.FromSeconds(seconds);
         var jobId = BackgroundJob.Schedule(() => TestJob("Testing a schedule job"), when);
@@ -47,7 +42,7 @@ public class BackgroundJobService(ITopicEventSender eventSender)
 
 
     //Very similar to requeue
-    public void Reshedule(string jobId, int seconds)
+    public void Reschedule(string jobId, int seconds)
     {
         var when = TimeSpan.FromSeconds(seconds);
         var success = BackgroundJob.Reschedule(jobId, when);
@@ -69,6 +64,8 @@ public class BackgroundJobService(ITopicEventSender eventSender)
     public void AddRecurring(string cronExpression)
     {
         //var when = "0 8 * * * ";
+        //cron minute/hour/dayOfMonth/month/DayOfWeek
+
         RecurringJob.AddOrUpdate(recurringJobId, () => TestJob("This is a recurring job"), cronExpression, new RecurringJobOptions()
         {
             MisfireHandling = MisfireHandlingMode.Strict         
@@ -78,13 +75,13 @@ public class BackgroundJobService(ITopicEventSender eventSender)
     //public void AddRecurring(string cronExpression)
     //{
     //    //var when = "0 8 * * * ";
-    //    RecurringJob.AddOrUpdate(recurringJobId, Constants.InvoicesQueue, () => TestJob("This is a recurring job"), cronExpression, new RecurringJobOptions()
+    //    RecurringJob.AddOrUpdate(recurringJobId, Constants.SlowQueue, () => TestJob("This is a recurring job"), cronExpression, new RecurringJobOptions()
     //    {
     //        MisfireHandling = MisfireHandlingMode.Strict
     //    });
     //}
 
-    //can be triggered manually at any point with the recurring job id.
+    //Can be triggered manually at any point with the recurring job id.
     //An example of this would be if you have a function scheduled to run at a certain time of night
     //but you also want to be able to run it manually at any time.
     public void TriggerRecurring()
@@ -106,7 +103,7 @@ public class BackgroundJobService(ITopicEventSender eventSender)
      * These jobs will run as soon as their parent job is complete
      * So you can chain them in a specific order
      * 
-     * Continue With does not work directly with Recurring jobs because a job instance doesn't exist for a recurring job until its enqeued
+     * Continue With does not work directly with Recurring jobs because a job instance doesn't exist for a recurring job until its enqueued
      */
     public void AddContinueWith()
     {
@@ -117,16 +114,54 @@ public class BackgroundJobService(ITopicEventSender eventSender)
 
 
 
+
     /*
-     * Methods must be public so the hangfire backgrounds threads call them
+     * Methods must be public so the hangfire background threads call them
      * It is best practice to pass in Id's as arguments rather than entire objects
      */
 
-    //[Queue(Constants.InvoicesQueue)]
+    //[Queue(Constants.FastQueue)]
     public async Task TestJob(string text)
     {
         await Task.Delay(5000);
 
         await eventSender.SendAsync("jobResult", new JobResult() { Text = text, Random = new Random()});
     }
+
+
+
+
+
+
+
+
+    /*
+     Explore the API a bit
+     */
+    public void GetStatistics()
+    {
+        var storage = JobStorage.Current;
+        var monitoring = storage.GetMonitoringApi();
+
+        var statistics = monitoring.GetStatistics();
+        
+        var processingCount = monitoring.ProcessingCount();
+        var processing = monitoring.ProcessingJobs(0, int.MaxValue);
+
+        var enqueued = monitoring.EnqueuedJobs(Constants.DefaultQueue, 0, int.MaxValue);    
+    
+    }
+
+
+
+    public string? GetJObDetails(string jobId)
+    {
+        var details = JobStorage.Current.GetMonitoringApi().JobDetails(jobId);
+
+        var job = details.Job;
+
+        return job.Method.Name;
+    }
+    
+
 }

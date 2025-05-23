@@ -22,7 +22,7 @@ public class Mutation
 
     public bool Reschedule([Service] BackgroundJobService vehicleService, string jobId, int seconds)
     {
-        vehicleService.Reshedule(jobId, seconds);
+        vehicleService.Reschedule(jobId, seconds);
         return true;
     }
 
@@ -41,6 +41,12 @@ public class Mutation
     public bool AddContinueWith([Service] BackgroundJobService vehicleService)
     {
         vehicleService.AddContinueWith();
+        return true;
+    }
+
+    public bool TriggerBulkExample([Service] BulkExampleService bulkExampleService, int count)
+    {
+        bulkExampleService.UploadBulk(count);
         return true;
     }
       

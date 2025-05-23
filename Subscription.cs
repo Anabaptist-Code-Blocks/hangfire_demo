@@ -1,7 +1,4 @@
-﻿using HotChocolate.Subscriptions;
-
-namespace HangfireDemo;
-
+﻿namespace HangfireDemo;
 public class Subscription
 {
     [Subscribe]

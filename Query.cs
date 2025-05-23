@@ -1,16 +1,12 @@
 ﻿namespace HangfireDemo;
 public class Query
 {
-    public Vehicle GetVehicle =>
-        new Vehicle
-        {
-            Year = 2018,
-            Brand = "Subaru",
-            Model = "Legacy",
-            Driver = new Driver
-            {
-                FirstName = "Leslie",
-                LastName = "Martin"
-            }
-        };
+    public bool GetStatistics([Service] BackgroundJobService service)
+    {
+        service.GetStatistics();
+        return true;
+    }
+
+    public string? GetJobDetails([Service] BackgroundJobService service, string jobId) =>
+        service.GetJObDetails(jobId);
 }
