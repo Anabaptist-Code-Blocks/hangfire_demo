@@ -42,7 +42,7 @@ public class BulkExampleService(ITopicEventSender eventSender)
 
 
     //[AutomaticRetry(Attempts = 3, DelaysInSeconds = [15], OnAttemptsExceeded = AttemptsExceededAction.Fail)]
-    [DisableConcurrentExecution(30)]
+    [DisableConcurrentExecution(30)] 
     public async Task Upload(string text)
     {
         await Task.Delay(5000);
@@ -89,7 +89,7 @@ public class BulkExampleService(ITopicEventSender eventSender)
     }
 
 
-    [Test]
+    [ExampleFilter]
     public async Task UploadWithFilterB(string text)
     {
         await Task.Delay(5000);
