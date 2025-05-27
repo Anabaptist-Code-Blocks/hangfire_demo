@@ -1,6 +1,7 @@
 using Hangfire;
 using Hangfire.PostgreSql;
 using HangfireDemo;
+using HangfireDemo.GraphQL;
 
 
 var builder = WebApplication.CreateBuilder(args);

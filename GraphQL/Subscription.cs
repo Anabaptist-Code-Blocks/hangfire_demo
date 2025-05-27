@@ -1,4 +1,4 @@
-﻿namespace HangfireDemo;
+﻿namespace HangfireDemo.GraphQL;
 public class Subscription
 {
     [Subscribe]

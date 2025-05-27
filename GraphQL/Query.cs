@@ -1,4 +1,4 @@
-﻿namespace HangfireDemo;
+﻿namespace HangfireDemo.GraphQL;
 public class Query
 {
     public bool GetStatistics([Service] BackgroundJobService service)
