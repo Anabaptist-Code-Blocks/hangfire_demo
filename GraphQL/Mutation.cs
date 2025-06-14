@@ -8,6 +8,12 @@ public class Mutation
         return true;
     }
 
+    public bool EnqueueSingle([Service] BackgroundJobService vehicleService, int count)
+    {
+        vehicleService.Enqueue(count);
+        return true;
+    }
+
     public bool Requeue([Service] BackgroundJobService vehicleService, string jobId)
     {
         vehicleService.Requeue(jobId);
@@ -35,6 +41,12 @@ public class Mutation
     public bool TriggerRecurring([Service] BackgroundJobService vehicleService)
     {
         vehicleService.TriggerRecurring();
+        return true;
+    }
+
+    public bool RemoveRecurring([Service] BackgroundJobService vehicleService)
+    {
+        vehicleService.RemoveRecurring();
         return true;
     }
 

@@ -9,18 +9,22 @@ public class BackgroundJobService(ITopicEventSender eventSender)
      * Will be executed almost immediately
      */
 
-    public void Enqueue()
-    {
-        //While this looks like a method call, its actually an expression tree. All its really doing is serializing the information
-        //namespace, method name, arguments and argument types, etc.
-        BackgroundJob.Enqueue(() => TestJob("Testing an enqueued job"));
-
-    }
-
     //public void Enqueue()
     //{
-    //    BackgroundJob.Enqueue(Constants.SlowQueue, () => TestJob("Testing an enqueued job"));
+    //    //While this looks like a method call, its actually an expression tree. All its really doing is serializing the informationAcccccbhuhrlfkd
+    //    //namespace, method name, arguments and argument types, etc.
+    //    BackgroundJob.Enqueue(() => TestJob("Testing an enqueued job"));
+
     //}
+
+    public void Enqueue(int count) =>
+        BackgroundJob.Enqueue(() => TestJob(count));
+
+
+    public void Enqueue()
+    {
+       var jobid = BackgroundJob.Enqueue(Constants.SlowQueue, () => TestJob("Testing an enqueued job"));
+    }
 
 
     //Can reference a service that is not constructor-injected
@@ -41,11 +45,11 @@ public class BackgroundJobService(ITopicEventSender eventSender)
      * Will enqueue after the given delay
      * Server's default pl
      */
-    public void Schedule(int seconds)   
+    public void Schedule(int seconds)
     {
         var when = TimeSpan.FromSeconds(seconds);
         var jobId = BackgroundJob.Schedule(() => TestJob("Testing a schedule job"), when);
-        Console.WriteLine($"The id for the schedule job is {jobId}");     
+        Console.WriteLine($"The id for the schedule job is {jobId}");
     }
 
 
@@ -76,7 +80,7 @@ public class BackgroundJobService(ITopicEventSender eventSender)
 
         RecurringJob.AddOrUpdate(recurringJobId, () => TestJob("This is a recurring job"), cronExpression, new RecurringJobOptions()
         {
-            MisfireHandling = MisfireHandlingMode.Strict         
+            MisfireHandling = MisfireHandlingMode.Strict
         });
     }
 
@@ -95,7 +99,7 @@ public class BackgroundJobService(ITopicEventSender eventSender)
     public void TriggerRecurring()
     {
         RecurringJob.TriggerJob(recurringJobId);
-                
+
     }
 
     public void RemoveRecurring()
@@ -117,7 +121,7 @@ public class BackgroundJobService(ITopicEventSender eventSender)
     {
         var parentId = BackgroundJob.Enqueue(() => TestJob("Enqueueing parent in Continue with"));
 
-        BackgroundJob.ContinueJobWith(parentId, Constants.DefaultQueue, () => TestJob("Enqueueing child job in Continue with"), JobContinuationOptions.OnlyOnSucceededState);       
+        BackgroundJob.ContinueJobWith(parentId, Constants.DefaultQueue, () => TestJob("Enqueueing child job in Continue with"), JobContinuationOptions.OnlyOnSucceededState);
     }
 
 
@@ -133,15 +137,20 @@ public class BackgroundJobService(ITopicEventSender eventSender)
     {
         await Task.Delay(5000);
 
-        await eventSender.SendAsync("jobResult", new JobResult() { Text = text, Random = new Random()});
+        await eventSender.SendAsync("jobResult", new JobResult() { Text = text, Random = new Random() });
     }
 
 
 
+    public async Task TestJob(int count)
+    {
+        for (int i = 0; i < count; i++)
+        {
+            await Task.Delay(5000);
 
-
-
-
+            await eventSender.SendAsync("jobResult", new JobResult() { Text = count.ToString(), Random = new Random() });
+        }
+    }
 
 
 
@@ -158,12 +167,12 @@ public class BackgroundJobService(ITopicEventSender eventSender)
         var monitoring = storage.GetMonitoringApi();
 
         var statistics = monitoring.GetStatistics();
-        
+
         var processingCount = monitoring.ProcessingCount();
         var processing = monitoring.ProcessingJobs(0, int.MaxValue);
 
-        var enqueued = monitoring.EnqueuedJobs(Constants.DefaultQueue, 0, int.MaxValue);    
-    
+        var enqueued = monitoring.EnqueuedJobs(Constants.DefaultQueue, 0, int.MaxValue);
+
     }
 
 
@@ -176,6 +185,6 @@ public class BackgroundJobService(ITopicEventSender eventSender)
 
         return job.Method.Name;
     }
-    
+
 
 }

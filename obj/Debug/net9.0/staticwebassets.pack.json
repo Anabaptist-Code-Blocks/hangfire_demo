@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\ABCcode\\hangfire_demo\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\HangfireDemo.bundle.scp.css",
-      "PackagePath": "staticwebassets\\HangfireDemo.pcc42nwkf4.bundle.scp.css"
-    },
-    {
       "Id": "C:\\ABCcode\\hangfire_demo\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

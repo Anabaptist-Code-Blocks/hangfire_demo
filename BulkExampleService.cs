@@ -41,8 +41,8 @@ public class BulkExampleService(ITopicEventSender eventSender)
 
 
 
-    //[AutomaticRetry(Attempts = 3, DelaysInSeconds = [15], OnAttemptsExceeded = AttemptsExceededAction.Fail)]
-    [DisableConcurrentExecution(30)] 
+    [AutomaticRetry(Attempts = 3, DelaysInSeconds = [15], OnAttemptsExceeded = AttemptsExceededAction.Fail)]
+    //[DisableConcurrentExecution(30)] 
     public async Task Upload(string text)
     {
         await Task.Delay(5000);
@@ -65,15 +65,15 @@ public class BulkExampleService(ITopicEventSender eventSender)
 
         //In a try/catch
         //Hangfire does not know anything went wrong.
-        //try
-        //{
-        //    if (text == "99")
-        //        throw new Exception("We are at 99");
-        //}
-        //catch (Exception ex)
-        //{
-        //    Console.WriteLine($"ERROR: {ex.Message}");
-        //}
+        try
+        {
+            if (text == "99")
+                throw new Exception("We are at 99");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"ERROR: {ex.Message}");
+        }
 
 
     }

@@ -206,12 +206,8 @@ C:\ABCcode\hangfire_demo\obj\Debug\net9.0\HangfireDemo.AssemblyInfoInputs.cache
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\HangfireDemo.AssemblyInfo.cs
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\HangfireDemo.csproj.CoreCompileInputs.cache
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\HangfireDemo.MvcApplicationPartsAssemblyInfo.cache
-C:\ABCcode\hangfire_demo\obj\Debug\net9.0\HangfireDemo.RazorAssemblyInfo.cache
-C:\ABCcode\hangfire_demo\obj\Debug\net9.0\HangfireDemo.RazorAssemblyInfo.cs
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\HangfireDemo.sourcelink.json
-C:\ABCcode\hangfire_demo\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\scopedcss\bundle\HangfireDemo.styles.css
-C:\ABCcode\hangfire_demo\obj\Debug\net9.0\scopedcss\projectbundle\HangfireDemo.bundle.scp.css
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\compressed\y8qgqljp87-b9sayid5wm.gz
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\compressed\foztjweyek-61n19gt1b8.gz
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\compressed\8m8nobxdjf-xtxxf3hu2r.gz
@@ -274,8 +270,6 @@ C:\ABCcode\hangfire_demo\obj\Debug\net9.0\compressed\vuaqbhe69t-2z0ns9nrw6.gz
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\compressed\6jldqddvb3-muycvpuwrr.gz
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\compressed\57e3j70j9k-87fc7y1x7t.gz
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\compressed\4noxvkybn4-mlv21k5csn.gz
-C:\ABCcode\hangfire_demo\obj\Debug\net9.0\compressed\r4c18v71dj-pcc42nwkf4.gz
-C:\ABCcode\hangfire_demo\obj\Debug\net9.0\compressed\n2x5kbc2aq-pcc42nwkf4.gz
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\staticwebassets.build.json
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\staticwebassets.development.json
 C:\ABCcode\hangfire_demo\obj\Debug\net9.0\staticwebassets.build.endpoints.json

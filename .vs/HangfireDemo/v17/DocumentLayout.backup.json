@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "C:\\ABCcode\\hangfire_demo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\testjobactivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:testjobactivator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\myotherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:myotherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\jobresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:jobresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\simulatedapisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:simulatedapisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\textfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:textfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\backgroundjobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:backgroundjobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\examplefilterattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:examplefilterattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\bulkexampleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:bulkexampleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\graphql\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:graphql\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\graphql\\query.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:graphql\\query.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\graphql\\mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:graphql\\mutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|c:\\abccode\\hangfire_demo\\examplejobfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D682400-F017-4287-9535-1593BAC7A03B}|HangfireDemo.csproj|solutionrelative:examplejobfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,58 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1819,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 19,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TextFile.txt",
-              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\TextFile.txt",
-              "RelativeDocumentMoniker": "TextFile.txt",
-              "ToolTip": "C:\\ABCcode\\hangfire_demo\\TextFile.txt",
-              "RelativeToolTip": "TextFile.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-05-15T01:06:37.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SimulatedApisService.cs",
-              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\SimulatedApisService.cs",
-              "RelativeDocumentMoniker": "SimulatedApisService.cs",
-              "ToolTip": "C:\\ABCcode\\hangfire_demo\\SimulatedApisService.cs",
-              "RelativeToolTip": "SimulatedApisService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T23:15:35.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Driver.cs",
-              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Driver.cs",
-              "RelativeDocumentMoniker": "Driver.cs",
-              "ToolTip": "C:\\ABCcode\\hangfire_demo\\Driver.cs",
-              "RelativeToolTip": "Driver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T23:07:19.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -97,15 +74,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Bookmark",
@@ -113,11 +82,15 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:134:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -129,7 +102,19 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:138:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -137,68 +122,187 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:136:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:134:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VehicleService.cs",
-              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\VehicleService.cs",
-              "RelativeDocumentMoniker": "VehicleService.cs",
-              "ToolTip": "C:\\ABCcode\\hangfire_demo\\VehicleService.cs",
-              "RelativeToolTip": "VehicleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAABoAAAAAAAAAA==",
+              "Title": "TestJobActivator.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\TestJobActivator.cs",
+              "RelativeDocumentMoniker": "TestJobActivator.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\TestJobActivator.cs",
+              "RelativeToolTip": "TestJobActivator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:34:17.381Z",
+              "WhenOpened": "2025-06-14T12:19:48.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JobResult.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\JobResult.cs",
+              "RelativeDocumentMoniker": "JobResult.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\JobResult.cs",
+              "RelativeToolTip": "JobResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T12:19:42.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Mutation.cs",
-              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Mutation.cs",
-              "RelativeDocumentMoniker": "Mutation.cs",
-              "ToolTip": "C:\\ABCcode\\hangfire_demo\\Mutation.cs",
-              "RelativeToolTip": "Mutation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Title": "MyOtherService.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\MyOtherService.cs",
+              "RelativeDocumentMoniker": "MyOtherService.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\MyOtherService.cs",
+              "RelativeToolTip": "MyOtherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:28:40.401Z",
+              "WhenOpened": "2025-06-14T12:19:39.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Vehicle.cs",
-              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Vehicle.cs",
-              "RelativeDocumentMoniker": "Vehicle.cs",
-              "ToolTip": "C:\\ABCcode\\hangfire_demo\\Vehicle.cs",
-              "RelativeToolTip": "Vehicle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Subscription.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\GraphQL\\Subscription.cs",
+              "RelativeDocumentMoniker": "GraphQL\\Subscription.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\GraphQL\\Subscription.cs",
+              "RelativeToolTip": "GraphQL\\Subscription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T22:17:32.229Z",
+              "WhenOpened": "2025-06-14T12:17:54.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Query.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\GraphQL\\Query.cs",
+              "RelativeDocumentMoniker": "GraphQL\\Query.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\GraphQL\\Query.cs",
+              "RelativeToolTip": "GraphQL\\Query.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T12:17:50.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Mutation.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\GraphQL\\Mutation.cs",
+              "RelativeDocumentMoniker": "GraphQL\\Mutation.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\GraphQL\\Mutation.cs",
+              "RelativeToolTip": "GraphQL\\Mutation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T13:54:45.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Constants.cs",
+              "RelativeDocumentMoniker": "Constants.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\Constants.cs",
+              "RelativeToolTip": "Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T13:52:25.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-27T13:33:00.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "BulkExampleService.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\BulkExampleService.cs",
+              "RelativeDocumentMoniker": "BulkExampleService.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\BulkExampleService.cs",
+              "RelativeToolTip": "BulkExampleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:12:21.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExampleFilterAttribute.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\ExampleFilterAttribute.cs",
+              "RelativeDocumentMoniker": "ExampleFilterAttribute.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\ExampleFilterAttribute.cs",
+              "RelativeToolTip": "ExampleFilterAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:23:49.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ExampleJobFilter.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\ExampleJobFilter.cs",
+              "RelativeDocumentMoniker": "ExampleJobFilter.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\ExampleJobFilter.cs",
+              "RelativeToolTip": "ExampleJobFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:23:45.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BackgroundJobService.cs",
+              "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\BackgroundJobService.cs",
+              "RelativeDocumentMoniker": "BackgroundJobService.cs",
+              "ToolTip": "C:\\ABCcode\\hangfire_demo\\BackgroundJobService.cs",
+              "RelativeToolTip": "BackgroundJobService.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAwLUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T19:08:03.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\ABCcode\\hangfire_demo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\ABCcode\\hangfire_demo\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T12:07:56.628Z",
               "EditorCaption": ""
